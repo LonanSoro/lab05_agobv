@@ -43,7 +43,8 @@ void initPoint(struct Point *p, double xVal, double yVal) {
   (*p).x = xVal;
   (*p).y = yVal;
   return;
-  
+  //all arguments passed in are of correct type and value #preconditions
+  //struct point is passed through the parameters and each point will have the given x val and y val for the point #postconditions
   //return; //@@@ for a void function, the stub is just a bare return that does nothing
 }
 
