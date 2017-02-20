@@ -10,10 +10,15 @@ using namespace std;
 #include "shapes.h"
 #include "shapeFuncs.h"
 #include "utility.h"
+#include <cmath>
 
 // Compute distance between two points
 
-double distanceBetween(Point p, Point q) {
+double distanceBetween(Point p, Point q){
+  double b=sqrt(pow((q.x-p.x),2)+pow((q.y-p.y),2));
+  return b;
+  
+
   return 99999.9; // @@@ STUB
   // HINTS: The distance formula is something you hopefully remember
   //   from H.S. algebra, but if not, Wikipedia is your friend.
