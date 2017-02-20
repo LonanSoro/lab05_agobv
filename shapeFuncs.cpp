@@ -77,7 +77,15 @@ bool pointsApproxEqual(Point p1,
 }
 
 bool boxesApproxEqual(Box b1, Box b2, double tolerance) {
-
+  if((fabs((b1.ul).x-(b2.ul).x) < tolerance)&&(fabs((b1.ul).y-(b2.ul).y) < tolerance)){
+    if(fabs((b1.width)-(b2.width)) < tolerance){
+      if(fabs((b1.height)-(b2.height)) < tolerance){
+	return true;
+      }
+    }
+  }
+  return false;
+  
   // Two boxes are approximately equal if their upper left corners are approximately 
   // equal, and if their corresponding widths and height are approx equal.
 
@@ -91,8 +99,7 @@ bool boxesApproxEqual(Box b1, Box b2, double tolerance) {
   // and the definition in your utility.cpp file.
 
   // TODO: FILL THIS IN WITH APPROPRIATE CODE
-
-  return false; // STUB!  TODO: Delete this line and comment and replace with appropriate code
+  // STUB!  TODO: Delete this line and comment and replace with appropriate code
 }
 
 
