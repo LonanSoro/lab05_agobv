@@ -19,7 +19,7 @@ double distanceBetween(Point p, Point q){
   return b;
   
 
-  return 99999.9; // @@@ STUB
+  // @@@ STUB
   // HINTS: The distance formula is something you hopefully remember
   //   from H.S. algebra, but if not, Wikipedia is your friend.
   //   The sqrt function is available when you use #include <cmath>, 
@@ -40,6 +40,10 @@ double distanceBetween(Point p, Point q){
 
 
 void initPoint(struct Point *p, double xVal, double yVal) {
+  (*p).x = xVal;
+  (*p).y = yVal;
+  return;
+  
   //return; //@@@ for a void function, the stub is just a bare return that does nothing
 }
 
