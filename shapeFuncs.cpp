@@ -123,6 +123,8 @@ void initBox(struct Box *b, double ulx, double uly, double w, double h){
 
 
 double areaOfBox(Box b) {
-  return -42.0;  /* stub---make sure all tests fail initially */
+  double c=(b.width)*(b.height);
+   
+  return c;  /* stub---make sure all tests fail initially */
   // you can use b.width to access width, and b.height to access height
 }
